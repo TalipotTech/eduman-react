@@ -1,0 +1,20 @@
+{
+  "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Slider/CategorySlider": {
+    "id": "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Slider/CategorySlider",
+    "files": [
+      "static/chunks/components_Elements_Slider_CategorySlider_tsx.js"
+    ]
+  },
+  "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Tabs/CourseTab": {
+    "id": "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Tabs/CourseTab",
+    "files": [
+      "static/chunks/components_Elements_Tabs_CourseTab_tsx.js"
+    ]
+  },
+  "..\\components\\Membership\\MembershipMain.tsx -> ./MembershipPrice": {
+    "id": "..\\components\\Membership\\MembershipMain.tsx -> ./MembershipPrice",
+    "files": [
+      "static/chunks/components_Membership_MembershipPrice_tsx.js"
+    ]
+  }
+}
