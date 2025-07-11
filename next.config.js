@@ -2,6 +2,12 @@
 const { createSecureHeaders } = require("next-secure-headers");
 const nextConfig = {
   swcMinify: true,
+  // Add for static export
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  },
   env: {
     API_KEY: process.env.API_KEY,
     APP_BASE_URL: process.env.APP_BASE_URL,

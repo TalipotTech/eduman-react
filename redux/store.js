@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
 import searchSlice from "./features/search-slice";
 import wishlistItems from "./features/wishlist-slice";
@@ -9,7 +9,7 @@ import productSlice from "./features/product-slice";
 
 const persistConfig = {
   key: "root",
-  storage: AsyncStorage,
+  storage,
   version: 1,
   blacklist: ["products"],
 };

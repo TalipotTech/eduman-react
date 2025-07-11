@@ -65,15 +65,16 @@ const Login = () => {
       },
     })
       .then(response => console.log(response))
-      .catch(err => console.error(err))
+      .catch(err => console.error('error:'+err))
   }
 
 
   const handleLogin = async (data: ILogin) => {
 
     initialize();
-
+//console.log(JSON.stringify(data));
     // Login 
+    
     fetch(`${process.env.APP_BACK_END_URL}/users/login`, {
       method: "POST",
       headers: {
@@ -81,13 +82,17 @@ const Login = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
+      
     })
-      .then(response => response.json())
+       .then(response => response.json())
       .then(response => loginResponse(response))
       .catch(err => console.error(err))
+     
+     
   };
 
   const loginResponse = (response: any) => {
+    console.log(response);
     if (response.success == true) {
       let userData = JSON.stringify({
         id: response.data.id,

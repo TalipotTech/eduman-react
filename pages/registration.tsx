@@ -64,6 +64,7 @@ const Registration = () => {
         initialize();
 
         console.log(JSON.stringify(data));
+        console.log(`${process.env.APP_BACK_END_URL}/users/register`);
         // Register 
         fetch(`${process.env.APP_BACK_END_URL}/users/register`, {
             method: "POST",

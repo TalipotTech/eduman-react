@@ -1,20 +1,44 @@
 {
-  "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Slider/CategorySlider": {
-    "id": "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Slider/CategorySlider",
+  "..\\components\\BecomeInstructor\\BecomeInstructorMain.tsx -> ./StepJourneySection": {
+    "id": 2096,
     "files": [
-      "static/chunks/components_Elements_Slider_CategorySlider_tsx.js"
+      "static/chunks/2096.e633557370e969d1.js"
+    ]
+  },
+  "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Slider/CategorySlider": {
+    "id": 5053,
+    "files": [
+      "static/chunks/944-94cdbb55f71b18e2.js",
+      "static/css/00084df6863bdb5f.css",
+      "static/chunks/4597.bc93984689b81c04.js"
     ]
   },
   "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Tabs/CourseTab": {
-    "id": "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Tabs/CourseTab",
+    "id": 2805,
     "files": [
-      "static/chunks/components_Elements_Tabs_CourseTab_tsx.js"
+      "static/chunks/2805-46fd71ebd513cf8d.js"
+    ]
+  },
+  "..\\components\\Home\\HomeMain.tsx -> ../Elements/Slider/BrandSlider": {
+    "id": 4049,
+    "files": [
+      "static/chunks/944-94cdbb55f71b18e2.js",
+      "static/css/00084df6863bdb5f.css",
+      "static/chunks/8740.3e050913bcbe8cdf.js"
+    ]
+  },
+  "..\\components\\Home\\HomeMain.tsx -> ../Elements/Slider/TestimonialSlider": {
+    "id": 9892,
+    "files": [
+      "static/chunks/944-94cdbb55f71b18e2.js",
+      "static/css/00084df6863bdb5f.css",
+      "static/chunks/4681.1748ca53ed95b9b4.js"
     ]
   },
   "..\\components\\Membership\\MembershipMain.tsx -> ./MembershipPrice": {
-    "id": "..\\components\\Membership\\MembershipMain.tsx -> ./MembershipPrice",
+    "id": 1795,
     "files": [
-      "static/chunks/components_Membership_MembershipPrice_tsx.js"
+      "static/chunks/1795.01c5a9519d99bde7.js"
     ]
   }
 }
