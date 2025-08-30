@@ -35,7 +35,7 @@ const ThankyouMain = ()=>{
     const bearerToken = local_storage_fallback__WEBPACK_IMPORTED_MODULE_4___default().getItem(_hooks_useStorage__WEBPACK_IMPORTED_MODULE_5__/* .LOCAL_STORAGE_KEYS.APP_TOKEN */ .d.APP_TOKEN);
     const UserObj = JSON.parse(local_storage_fallback__WEBPACK_IMPORTED_MODULE_4___default().getItem(_hooks_useStorage__WEBPACK_IMPORTED_MODULE_5__/* .LOCAL_STORAGE_KEYS.APP_USER */ .d.APP_USER));
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/setting/inner-page/thankyou`, {
+        fetch(`${process.env.APP_BACK_END_URL}/setting/inner-page/thankyou`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -43,7 +43,7 @@ const ThankyouMain = ()=>{
             }
         }).then((response)=>response.json()).then((response)=>handleResponseData(response)).catch((err)=>console.error(err));
         // users data
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/users/me`, {
+        fetch(`${process.env.APP_BACK_END_URL}/users/me`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

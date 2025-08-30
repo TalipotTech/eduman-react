@@ -48,7 +48,7 @@ const CourseTab = ()=>{
     const products = (0,react_redux__WEBPACK_IMPORTED_MODULE_5__.useSelector)(_redux_features_product_slice__WEBPACK_IMPORTED_MODULE_6__/* .selectProducts */ .nR);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         if (!Object.keys(allItems).length) {
-            fetch(`${"http://127.0.0.1:8000/api/v1"}/courses/tabs-courses-and-categories`, {
+            fetch(`${process.env.APP_BACK_END_URL}/courses/tabs-courses-and-categories`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
@@ -66,7 +66,7 @@ const CourseTab = ()=>{
                     setDisplayItems(selected_items);
                 }
             }).catch((err)=>console.error(err));
-            fetch(`${"http://127.0.0.1:8000/api/v1"}/setting/home-01/course`, {
+            fetch(`${process.env.APP_BACK_END_URL}/setting/home-01/course`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",

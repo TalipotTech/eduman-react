@@ -51,7 +51,7 @@ const TestimonialSlider = ()=>{
     };
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/setting/home-01/testimonial`, {
+        fetch(`${process.env.APP_BACK_END_URL}/setting/home-01/testimonial`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

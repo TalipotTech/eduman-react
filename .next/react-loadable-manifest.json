@@ -2,7 +2,7 @@
   "..\\components\\BecomeInstructor\\BecomeInstructorMain.tsx -> ./StepJourneySection": {
     "id": 2096,
     "files": [
-      "static/chunks/2096.e633557370e969d1.js"
+      "static/chunks/2096.5369c12a3a38d2b4.js"
     ]
   },
   "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Slider/CategorySlider": {
@@ -10,13 +10,13 @@
     "files": [
       "static/chunks/944-94cdbb55f71b18e2.js",
       "static/css/00084df6863bdb5f.css",
-      "static/chunks/4597.bc93984689b81c04.js"
+      "static/chunks/4597.3ab4fa9b89130614.js"
     ]
   },
   "..\\components\\HomeTwo\\HomeTwoMain.tsx -> ../Elements/Tabs/CourseTab": {
     "id": 2805,
     "files": [
-      "static/chunks/2805-46fd71ebd513cf8d.js"
+      "static/chunks/2805-cb930e40cfd2d655.js"
     ]
   },
   "..\\components\\Home\\HomeMain.tsx -> ../Elements/Slider/BrandSlider": {
@@ -24,7 +24,7 @@
     "files": [
       "static/chunks/944-94cdbb55f71b18e2.js",
       "static/css/00084df6863bdb5f.css",
-      "static/chunks/8740.3e050913bcbe8cdf.js"
+      "static/chunks/8740.983e7ee4a8e51ae9.js"
     ]
   },
   "..\\components\\Home\\HomeMain.tsx -> ../Elements/Slider/TestimonialSlider": {
@@ -32,13 +32,13 @@
     "files": [
       "static/chunks/944-94cdbb55f71b18e2.js",
       "static/css/00084df6863bdb5f.css",
-      "static/chunks/4681.1748ca53ed95b9b4.js"
+      "static/chunks/4681.37077dfb5ca04fa3.js"
     ]
   },
   "..\\components\\Membership\\MembershipMain.tsx -> ./MembershipPrice": {
     "id": 1795,
     "files": [
-      "static/chunks/1795.01c5a9519d99bde7.js"
+      "static/chunks/1795.42efdd52fbedff42.js"
     ]
   }
 }

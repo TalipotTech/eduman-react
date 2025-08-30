@@ -32,7 +32,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([uuid
 const BlogSidebar = ()=>{
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/blogs/list`, {
+        fetch(`${process.env.APP_BACK_END_URL}/blogs/list`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -160,7 +160,7 @@ uuid__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (awai
 const SidebarCategory = ()=>{
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/categories/type?type=Blog`, {
+        fetch(`${process.env.APP_BACK_END_URL}/categories/type?type=Blog`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

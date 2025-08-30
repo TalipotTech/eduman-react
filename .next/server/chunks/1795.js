@@ -38,7 +38,7 @@ const MembershipPrice = (propData)=>{
     const UserObj = JSON.parse(local_storage_fallback__WEBPACK_IMPORTED_MODULE_5___default().getItem(_hooks_useStorage__WEBPACK_IMPORTED_MODULE_6__/* .LOCAL_STORAGE_KEYS.APP_USER */ .d.APP_USER));
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/subscription/packages`, {
+        fetch(`${process.env.APP_BACK_END_URL}/subscription/packages`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

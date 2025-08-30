@@ -42,7 +42,7 @@ const MyWishlist = ()=>{
     const slug = router.query.slug;
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
         const bearerToken = local_storage_fallback__WEBPACK_IMPORTED_MODULE_5___default().getItem(_hooks_useStorage__WEBPACK_IMPORTED_MODULE_6__/* .LOCAL_STORAGE_KEYS.APP_TOKEN */ .d.APP_TOKEN);
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/users/wishlist`, {
+        fetch(`${process.env.APP_BACK_END_URL}/users/wishlist`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

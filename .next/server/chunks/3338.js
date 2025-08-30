@@ -225,7 +225,7 @@ __webpack_async_result__();
 const Footer = ()=>{
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/site-setting/footer`, {
+        fetch(`${process.env.APP_BACK_END_URL}/site-setting/footer`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -513,7 +513,7 @@ const HeaderMenu = ()=>{
     const [menus, setMenus] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     const [childMenus, setChildMenus] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/setting/menu/by-category?type=Header_Style_1`, {
+        fetch(`${process.env.APP_BACK_END_URL}/setting/menu/by-category?type=Header_Style_1`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -589,7 +589,7 @@ const MobileMenu = ({ data , setMenuOpen , menuOpen  })=>{
     const [childMenus, setChildMenus] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         setPath(router.pathname);
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/setting/menu/by-category?type=Header_Style_1`, {
+        fetch(`${process.env.APP_BACK_END_URL}/setting/menu/by-category?type=Header_Style_1`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -784,7 +784,7 @@ const MobileMenu = ({ data , setMenuOpen , menuOpen  })=>{
 /* harmony export */   "Z": () => (/* binding */ getImage)
 /* harmony export */ });
 function getImage(src) {
-    return `${"http://127.0.0.1:8000"}/@main/storage/app/public/${src}`;
+    return `${process.env.APP_BACKEND_HOME_URL}/@main/storage/app/public/${src}`;
 }
 
 

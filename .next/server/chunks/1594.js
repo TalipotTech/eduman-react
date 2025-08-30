@@ -34,7 +34,7 @@ const BlogSection = ()=>{
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     const [sectionData, setSectionData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/blogs/list`, {
+        fetch(`${process.env.APP_BACK_END_URL}/blogs/list`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -43,7 +43,7 @@ const BlogSection = ()=>{
         }).then((response)=>response.json()).then((response)=>{
             setData(response.data);
         }).catch((err)=>console.error(err));
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/setting/home-03/insta-images-more-titles`, {
+        fetch(`${process.env.APP_BACK_END_URL}/setting/home-03/insta-images-more-titles`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

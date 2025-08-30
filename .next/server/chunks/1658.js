@@ -79,7 +79,7 @@ const HeaderFour = ()=>{
     };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         setPath(router.pathname);
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/site-setting/header`, {
+        fetch(`${process.env.APP_BACK_END_URL}/site-setting/header`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

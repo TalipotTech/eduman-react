@@ -22,7 +22,7 @@ const DropdownCategory = ()=>{
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     const [lavelTwoCats, setLavelTwoCats] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
-        fetch(`${"http://127.0.0.1:8000/api/v1"}/categories/type?type=Course`, {
+        fetch(`${process.env.APP_BACK_END_URL}/categories/type?type=Course`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
