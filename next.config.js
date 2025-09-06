@@ -9,6 +9,14 @@ const nextConfig = {
     APP_BACK_END_URL: process.env.APP_BACK_END_URL,
     APP_IMAGE_BASE_URL: process.env.APP_IMAGE_BASE_URL,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/lms/api/v1/:path*',
+        destination: 'https://ensate.in/lms/api/v1/:path*',
+      },
+    ];
+  },
   /*
   async headers() {
     return [
